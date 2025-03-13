@@ -89,7 +89,7 @@ export const navItems: {
       icon: TextsmsOutlinedIcon,
       iconActive: TextsmsIcon,
       type: 'app',
-      route: '/',
+      route: '/dashboard',
     },
     {
       name: 'Call',

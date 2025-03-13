@@ -1,5 +1,18 @@
 # Reference Notes
 
+### If `<AppChat />` is moved from `/pages/dashboard/index.tsx` be sure to change routes in `app.nav.ts`
+```sh
+apps: [
+   {
+      name: 'Chat',
+      icon: TextsmsOutlinedIcon,
+      iconActive: TextsmsIcon,
+      type: 'app',
+      route: '/dashboard', // Change this
+    },
+]
+```
+
 ## Syncing Forked Repo with Upstream
 
 To sync your forked repository with the upstream repository using GitHub CLI (`gh`), use the following command:
@@ -36,3 +49,5 @@ If you have uncommitted or untracked changes, stash them before syncing:
    ```sh
    git stash pop
    ```
+
+
